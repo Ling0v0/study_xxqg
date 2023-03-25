@@ -55,7 +55,7 @@ jobs:
           version: latest
           args: build --rm-dist --id docker ${{ steps.snapshot.outputs.ARG }}
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.MY_GITHUB_TOKEN }}
       -
         name: Docker meta
         id: meta
