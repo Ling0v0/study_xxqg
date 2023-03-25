@@ -33,4 +33,4 @@ jobs:
         sudo mv -f config.yml /home/runner/work/study_xxqg/study_xxqg/config/config.yml
         docker exec -it study_xxqg bash
         cd opt
-        ./study_xxqg --item
+        ./study_xxqg  --init
