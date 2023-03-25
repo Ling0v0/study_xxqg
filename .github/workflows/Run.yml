@@ -1,0 +1,36 @@
+name: Run Docker Container
+
+on:
+  workflow_dispatch:
+  push:
+
+jobs:
+  run_container:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Set up Docker Buildx
+      uses: docker/setup-buildx-action@v1
+
+    - name: Pull Docker image
+      run: docker pull w8877/study_xxqg:latest
+
+    - name: Run Docker container
+      run: |
+        sudo service docker start
+        docker run \
+          --name study_xxqg \
+          -d \
+          --privileged=true \
+          -p 8080:8080 \
+          -v /home/runner/work/study_xxqg/study_xxqg/config:/opt/config/ \
+          w8877/study_xxqg:latest
+        pwd
+        wget -O config.yml "https://raw.githubusercontent.com/w1770946466/Everyday_News/main/XXQG_TiKu/config.yml"
+        sudo mv -f config.yml /home/runner/work/study_xxqg/study_xxqg/config/config.yml
+        docker exec -it study_xxqg bash
+        cd opt
+        ./study_xxqg --item
