@@ -54,7 +54,7 @@ jobs:
         id: meta
         uses: docker/metadata-action@v4
         with:
-          images: xlh001/study_xxqg
+          images: w8877/study_xxqg
           tags: |
             type=raw,value=latest
             type=ref,event=tag
