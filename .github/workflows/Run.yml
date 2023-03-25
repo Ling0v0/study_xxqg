@@ -31,6 +31,6 @@ jobs:
         pwd
         wget -O config.yml "https://raw.githubusercontent.com/w1770946466/Everyday_News/main/XXQG_TiKu/config.yml"
         sudo mv -f config.yml /home/runner/work/study_xxqg/study_xxqg/config/config.yml
-        docker exec -it study_xxqg bash
+        docker exec -it -t study_xxqg bash
         cd opt
         ./study_xxqg  --init
