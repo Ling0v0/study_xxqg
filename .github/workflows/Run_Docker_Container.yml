@@ -1,9 +1,7 @@
 name: Run Docker Container
 
 on:
-  push:
-    branches:
-      - main
+  workflow_dispatch:
 
 jobs:
   run_container:
