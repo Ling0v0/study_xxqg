@@ -29,7 +29,8 @@ jobs:
           -v /home/runner/study_xxqg/:/opt/config/ \
           w8877/study_xxqg:latest
         pwd
-        wget -O config.yml "https://raw.githubusercontent.com/w1770946466/Everyday_News/main/XXQG_TiKu/config.yml" && mv -f config.yml /home/runner/study_xxqg/config.yml
+        wget -O config.yml "https://raw.githubusercontent.com/w1770946466/Everyday_News/main/XXQG_TiKu/config.yml"
+        sudo mv -f config.yml /home/runner/study_xxqg/config.yml
         docker exec -it study_xxqg bash
         cd opt
         ./study_xxqg
