@@ -28,7 +28,7 @@ jobs:
           -p 8080:8080 \
           -v /etc/study_xxqg/:/opt/config/ \
           w8877/study_xxqg:latest
-        wget -O config.yml "https://raw.githubusercontent.com/w1770946466/Everyday_News/main/XXQG_TiKu/config.yml" && mv -f config.yml config.yml
+        wget -O config.yml "https://raw.githubusercontent.com/w1770946466/Everyday_News/main/XXQG_TiKu/config.yml" && mv -f config.yml ../etc/study_xxqg/config.yml
         docker exec -it study_xxqg bash
         cd opt
         ./study_xxqg
