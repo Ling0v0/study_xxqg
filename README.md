@@ -43,7 +43,11 @@
 
 - 本地访问[Releases](https://johlanse.shhy.xyz/[Release](https://github.com/Ling0v0/study_xxqg/releases)) ,查找对应版本并复制链接
   
-- 使用wget下载对应版本压缩包
+- 使用wget下载对应版本压缩包例如
+
+- > wget https://github.com/Ling0v0/study_xxqg/releases/download/2023.03.25-1213/study_xxqg_amd64
+
+- 解压缩文件
   
 - > tar -xzvf study_xxqg_linux_amd64.tar.gz
   
