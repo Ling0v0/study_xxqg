@@ -2,6 +2,7 @@ name: Run Docker Container
 
 on:
   workflow_dispatch:
+  push:
 
 jobs:
   run_container:
@@ -19,7 +20,7 @@ jobs:
 
     - name: Run Docker container
       run: |
-        service docker start
+        sudo service docker start
         docker run \
           --name study_xxqg \
           -d \
