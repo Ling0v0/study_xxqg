@@ -76,7 +76,7 @@ docker run --name study_xxqg -d -p 8080:8080 -v /etc/study_xxqg/:/opt/config/  w
 ## docker-compose运行
 
 ```
-wget https://raw.githubusercontent.com/sjkhsl/study_xxqg/main/docker-compose.yml
+wget https://raw.githubusercontent.com/Ling0v0/study_xxqg/main/docker-compose.yml
 docker-compose up -d
 ```
 
@@ -463,7 +463,7 @@ study_xxqg官方搭建的跳板是使用github page进行搭建的，可能访�
   
   ```
   在文件路径栏输入**cmd**,然后再黑色命令窗口中输入```./study_xxqg.exe```,
-  然后查看报错内容截图并在[github](https://github.com/johlanse/study_xxqg/issues) 提交issue
+  然后查看报错内容截图并在[github](https://github.com/Ling0v0/study_xxqg/issues) 提交issue
   ```
   
 - ### web端账号密码
