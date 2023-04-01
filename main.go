@@ -3,7 +3,7 @@ package main
 import (
 	"flag"
 	"fmt"
-	"github.com/Ling0v0/study_xxqg/utils/stop"
+	"github.com/sjkhsl/study_xxqg/utils/stop"
 	"io"
 	"math/rand"
 	"net/http"
@@ -25,15 +25,15 @@ import (
 	nested "github.com/Lyrics-you/sail-logrus-formatter/sailor"
 	"github.com/huoxue1/xdaemon"
 
-	"github.com/Ling0v0/study_xxqg/conf"
-	"github.com/Ling0v0/study_xxqg/lib/state"
-	"github.com/Ling0v0/study_xxqg/utils"
+	"github.com/sjkhsl/study_xxqg/conf"
+	"github.com/sjkhsl/study_xxqg/lib/state"
+	"github.com/sjkhsl/study_xxqg/utils"
 	// "github.com/sjkhsl/study_xxqg/gui"
-	"github.com/Ling0v0/study_xxqg/lib"
-	"github.com/Ling0v0/study_xxqg/model"
-	"github.com/Ling0v0/study_xxqg/push"
-	"github.com/Ling0v0/study_xxqg/utils/update"
-	"github.com/Ling0v0/study_xxqg/web"
+	"github.com/sjkhsl/study_xxqg/lib"
+	"github.com/sjkhsl/study_xxqg/model"
+	"github.com/sjkhsl/study_xxqg/push"
+	"github.com/sjkhsl/study_xxqg/utils/update"
+	"github.com/sjkhsl/study_xxqg/web"
 )
 
 var (
